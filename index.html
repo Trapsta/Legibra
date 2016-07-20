@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Hi Legibra :) ::: Creative Digital Project</title>
+  <title>Jasper ::: Creative Digital Project</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -30,6 +30,10 @@
   <!-- Latest compiled and minified JavaScript -->
   <script type="text/javascript" src="js/bootstrap.min.js" ></script>
 
+  <!--CUSTOM CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   <link rel="stylesheet" href="css/style.css">
+
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -41,7 +45,13 @@
 
 <nav class="navigation">
   <li><a href="#" class="menu-icon">
-    <i class="fa fa-search" aria-hidden="true"></i>
+    <img src="images/search.png">
+    <div class="input-group hidden">
+      <input type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+    </div><!-- /input-group -->
   </a></li>
   <ul class="main-navigation">
     <li><a href="#hero">Home</a></li>
@@ -55,13 +65,13 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <section id="hero" class="hero u-full-width">
+  <section id="header" class="header u-full-width">
   <div class="hero-image"></div>
-  <div class="container centered">
-    <div class="twelve columns">
-      <h1 class="separator">Creative Digital Project</h1>
-      <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-      Aenean commodo ligula eget dolor. Aenean massa.</h2>
+  <div class="container">
+    <div class="col-md-12">
+      <h1 class="BIg_Title">Creative Digital Project</h1>
+      <p class="Title_desc ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      Aenean commodo ligula eget dolor. Aenean massa.</p>
     </div>
   </div>
 </section>
@@ -70,71 +80,72 @@
 <section id="about" class="about u-full-width">
   <div class="container">
     <div class="row">
-      <div class="twelve columns">
-        <div class="four columns">
+      <div class="col-md-12">
+        <div class="col-md-4">
           <div class="about-icon thumbnail">
-            <img src="placeholder/200x400">            
+            <img src="images/Icon-AboutUs.png"> 
+            <h3>About Us</h3>           
           </div>          
         </div>
-        <div class="eight columns">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        <div class="col-md-8">
+          <p class="description">Lorem ipsum dolor sit amet, <b>consectetur adipisicing elit</b>, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat.<br>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse
+          <b>Duis aute irure dolor</b> in reprehenderit in voluptate velit esse
           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a class="btn primary btn-default" href="#" role="button">Learn More</a>
+          <a class="btn primary-btn btn-default" href="#" role="button">Learn More</a>
         </div>
       </div>
      </div><!-- Row -->
   </div><!-- Container -->
 </section>
 
-<section id="service" class="services u-full-width">
+<section id="services" class="services u-full-width">
   <div class="container">
     <div class="row">
-      <div class="four columns">
+      <div class="col-md-4">
         <div class="service-box">
-          <img class="service-icon" src="graphic-icon">
-          <h3 class="service">Graphic Design</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          <img class="service-icon" src="images/Icon-Graphic.png">
+          <h3 class="title">Graphic Design</h3>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-      <div class="four columns">
+      <div class="col-md-4">
         <div class="service-box">
-          <img class="service-icon" src="graphic-icon">
+          <img class="service-icon" src="images/icon-web.png">
           <h3 class="service">Web Development</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-      <div class="four columns">
+      <div class="col-md-4">
         <div class="service-box">
-          <img class="service-icon" src="graphic-icon">
+          <img class="service-icon" src="images/Icon-Services.png">
           <h3 class="service">Our Services</h3>
           <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua.</blockquote>
         </div>
       </div>
-      <div class="four columns">
+      <div class="col-md-4">
         <div class="service-box">
-          <img class="service-icon" src="graphic-icon">
+          <img class="service-icon" src="images/icon-SEO.png">
           <h3 class="service">SEO & Marketing</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-      <div class="four columns">
+      <div class="col-md-4">
         <div class="service-box">
-          <img class="service-icon" src="graphic-icon">
+          <img class="service-icon" src="images/icon-mobile-service.png">
           <h3 class="service">Mobile Development</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-      <div class="four columns">
+      <div class="col-md-4">
         <div class="service-box">
           <img class="service-bg" src="mac">
       </div>
@@ -142,13 +153,13 @@
   </div><!-- Container -->
 </section>
 
-<section id="work" class="work u-full-width">
+<section id="works" class="works u-full-width">
   <div class="container">
     <div class="row">
-      <div class="twelve columns">
-        <img src="placehold.it/64x64">
+      <div class="col-md-12">
+        <img src="images/Icon-Works.png">
         <h3>Recent Work</h3>
-        <!--Carousel -->
+        <!--Carousel showcase -->
         <a class="btn secondary btn-default" href="#" role="button">Learn More</a>
       </div>
     </div><!-- Row -->
@@ -156,18 +167,107 @@
 </section>
 
 
-<section id="team" class="team u-full-width">
+<section id="our-team" class="our-team u-full-width">
   <div class="container">
     <div class="row">
-      <div class="twelve columns">
-        <img src="placehold.it/64x64">
+      <div class="col-md-12">
+        <img src="images/Icon-Team.png">
         <h3>Meet Our Team</h3>
-        <!--Carousel -->
-      </div>
-    </div>
+        <div id="owl-example" class="owl-carousel">
+          <div class="person">
+            <span><img src="images/team-1.png"></span>
+            <h3 class="name">Miguel Obrien</h3>
+            <p class="position">Ceo & Founder</p>
+            <ul class="social-links">
+              <li>
+                <a href="http://linkedin.com/jasperkinoti" target="_blank">
+                  <img src="images/linked-in.png">
+                </a>
+              </li>
+              <li>
+                <a href="https://plus.google.com/117485987435498566293" target="_blank">
+                  <img src="images/google+.png">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/webdesigntutsplus" target="_blank">
+                  <img src="images/facebook.png">
+                </a>
+              </li>        
+              <li>
+                <a href="http://twitter.com/wdtuts" target="_blank">
+                  <img src="images/twitter.png">
+                </a>
+              </li>
+            </ul>
+          </div><!--person-1-->
+          <div class="person">
+            <span><img src="images/team-2.png"></span>
+            <h3 class="name">Jackie Carroll</h3>
+            <p class="position">Art Director</p>
+            <ul class="social-links">
+              <li>
+                <a href="http://linkedin.com/jasperkinoti" target="_blank">
+                  <img src="images/linked-in.png">
+                </a>
+              </li>
+              <li>
+                <a href="https://plus.google.com/117485987435498566293" target="_blank">
+                  <img src="images/google+.png">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/webdesigntutsplus" target="_blank">
+                  <img src="images/facebook.png">
+                </a>
+              </li>        
+              <li>
+                <a href="http://twitter.com/wdtuts" target="_blank">
+                  <img src="images/twitter.png">
+                </a>
+              </li>
+            </ul>
+          </div><!--person-2-->
+          <div class="person">
+            <span><img src="images/team-3.png"></span>
+            <h3 class="name">Ida Morrison</h3>
+            <p class="position">Designer</p>
+            <ul class="social-links">
+              <li>
+                <a href="http://linkedin.com/jasperkinoti" target="_blank">
+                  <img src="images/linked-in.png">
+                </a>
+              </li>
+              <li>
+                <a href="https://plus.google.com/117485987435498566293" target="_blank">
+                  <img src="images/google+.png">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/webdesigntutsplus" target="_blank">
+                  <img src="images/facebook.png">
+                </a>
+              </li>        
+              <li>
+                <a href="http://twitter.com/wdtuts" target="_blank">
+                  <img src="images/twitter.png">
+                </a>
+              </li>
+            </ul>
+          </div><!--person-3-->
+          
+        </div><!--OWL Carousel -->
+      </div><!--col-md-12-->
+    </div><!--Row-->
+  </div><!--container -->
+</section>
+
+
+<section id="testimonial" class="testimonial u-full-width">
+  <div class="container">
     <div class="row">
-      <div class="twelve columns">
-        <img src="placehold.it/64x64">
+      <div class="col-md-12">
+        <img src="images/Icon-Testimonial.png">
         <h3>Testimonial</h3>
         <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -175,35 +275,111 @@
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <div class="profile-box">
-          <!--profile box-->
+        <div id="owl-example" class="owl-carousel">
+           <div class="photo-box">
+          <span><img src="images/client.png"></span>
+          <h3>Ben Carroll</h3>
+          <p>Lead Designer @ Flickr</p>
+          <ul class="social-links">
+            <li>
+                <a href="https://www.facebook.com/webdesigntutsplus" target="_blank">
+                  <img src="images/facebook.png">
+                </a>
+              </li>        
+              <li>
+                <a href="http://twitter.com/wdtuts" target="_blank">
+                  <img src="images/twitter.png">
+                </a>
+              </li>
+              <li>
+                <a href="https://flikr.com/117485987435498566293" target="_blank">
+                  <img src="images/flickr.png">
+                </a>
+              </li>
+          </ul>
         </div>
+
+         <div class="photo-box">
+          <span><img src="images/client.png"></span>
+          <h3>Jasper Kinoti</h3>
+          <p>Lead Ninja @ Flickr</p>
+          <ul class="social-links">
+            <li>
+                <a href="https://www.facebook.com/webdesigntutsplus" target="_blank">
+                  <img src="images/facebook.png">
+                </a>
+              </li>        
+              <li>
+                <a href="http://twitter.com/wdtuts" target="_blank">
+                  <img src="images/twitter.png">
+                </a>
+              </li>
+              <li>
+                <a href="https://flikr.com/117485987435498566293" target="_blank">
+                  <img src="images/flickr.png">
+                </a>
+              </li>
+          </ul>
+        </div>
+
+         <div class="photo-box">
+          <span><img src="images/client.png"></span>
+          <h3>Mak Mende</h3>
+          <p>Lead debugger @ Flickr</p>
+          <ul class="social-links">
+            <li>
+                <a href="https://www.facebook.com/webdesigntutsplus" target="_blank">
+                  <img src="images/facebook.png">
+                </a>
+              </li>        
+              <li>
+                <a href="http://twitter.com/wdtuts" target="_blank">
+                  <img src="images/twitter.png">
+                </a>
+              </li>
+              <li>
+                <a href="https://flikr.com/117485987435498566293" target="_blank">
+                  <img src="images/flickr.png">
+                </a>
+              </li>
+          </ul>
+        </div>
+        </div><!--OWL CAROUSEL -->
+       
       </div>
    </div><!-- Row -->
   </div><!-- Container -->
 </section>
 
-<section id="pre-footer" class="pre-footer u-full-width">
+<section id="subscribe" class="subscribe u-full-width">
   <div class="container">
     <div class="row">
-      <div class="twelve columns">
+      <div class="col-md-12">
         <p>Join Our Newsletter for Updates</p>
         <form class="form hidden">
           <input type="email" id="email" name="email" placeholder="example@Lorem.com" />
           <input type="submit" value="Submit" />
         </form>
       </div>
-      <div class="twelve columns">
+    </div><!-- row -->
+  </div><!-- container -->
+</section>
+
+
+<section id="contact" class="contact u-full-width">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
         <div class="gmap"></div>
-          <img src="placehold.it/64x64">
+          <img src="images/icon-location.png">
           <h3>Get in Touch</h3>
-           <div class="eight columns contact-us-form">
+           <div class="col-md-8 contact-us-form">
             <form>
               <div class="row">
-                <div class="six columns">
+                <div class="col-md-6">
                   <input class="u-full-width" type="text" placeholder="Name" id="nameInput">
                 </div>
-                <div class="six columns">
+                <div class="col-md-6">
                   <input class="u-full-width" type="email" placeholder="Email" id="emailInput">
                 </div>
               </div>
@@ -214,11 +390,11 @@
           <div class="floating-menu">
             <ul>
               <li>
-                <i class="fa fa-home" aria-hidden="true"></i>
-                <span>Eden Sq. <br> Weslands - Nairobi <br> Kenya</span>
+                <img src="images/icon-address.png">
+                <span>Eden Sq. <br> Westlands - Nairobi <br> Kenya</span>
               </li>
                <li>
-                <i class="fa fa-home" aria-hidden="true"></i>
+                <img src="images/icon-mobile-service.png">
                 <span>0715 849 520 <br> jasper.kinoti@gmail.com</span>
               </li>
             </ul>
@@ -231,38 +407,38 @@
 <section id="footer" class="footer u-full-width">
   <div class="container">
     <div class="row">
-      <div class="eight columns">
+      <div class="col-md-8">
         <p>&#169; Legibra (K) Ltd. All Rights Reserved.</p>
       </div>
-      <div class="social-nav">
+      <div class="col-md-4 social-nav">
         <ul class="social-links">
           <li>
             <a href="http://behance.net/trapsta" target="_blank">
-              <i class="fa fa-behance"></i>
+              <img src="images/behance.png">
             </a>
           </li>
           <li>
             <a href="http://linkedin.com/jasperkinoti" target="_blank">
-              <i class="fa fa-linkedin"></i>
+              <img src="images/linked-in.png">
             </a>
           </li>
           <li>
             <a href="https://plus.google.com/117485987435498566293" target="_blank">
-              <i class="fa fa-google-plus"></i>
+              <img src="images/google+.png">
             </a>
           </li>
           <li>
             <a href="https://www.facebook.com/webdesigntutsplus" target="_blank">
-              <i class="fa fa-facebook"></i>
+              <img src="images/facebook.png">
             </a>
           </li>        
           <li>
             <a href="http://twitter.com/wdtuts" target="_blank">
-              <i class="fa fa-twitter"></i>
+              <img src="images/twitter.png">
             </a>
           </li>
         </ul>
-      </div>
+      </div><!--col-md-8 -->
     </div><!-- Row -->
   </div><!-- Container -->
 </section>
