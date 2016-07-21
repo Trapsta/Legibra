@@ -69,14 +69,17 @@ body {
   letter-spacing: .05em;
   color: #222222;
   font-family: 'PT Sans', "Raleway", Helvetica, Arial, sans-serif;
+  background-color: #ebebeb;
 }
 h1 {
-  font-family: 'Proxima Nova Rg';
+  font-family: 'Proxima Nova Rg', "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
 }
 h3 {
   font-family: 'Proxima Nova Lt', "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
 }
 .centered {
   position: absolute;
@@ -97,6 +100,12 @@ h3 {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 100%;
+}
+.social-links {
+	list-style: none;
+}
+.social-links li {
+	display: inline-block;
 }
 /* =Section general styling
 -------- */
@@ -129,30 +138,70 @@ section {
   background-repeat: no-repeat;
   opacity: .35;
 }
+
+/* =Header
+-------- */
+ 
+.header {
+  padding: 0;
+  min-height: 100vh; /* Fill screen 100% */
+  text-align: center;
+  position: relative;
+  background-color: #9f9acf; 
+  color: white;
+}
+.header-image {
+  background: url("../images/DeathtoStock_Wired7.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+.header-image:after {
+  content: '';
+  opacity: .6; /* purple tint */
+  background: #9f9acf;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+.navigation {
+  position: absolute;
+  z-index: 3;
+  left: 10%;
+  max-width: 960px;
+}
+.navigation-right {
+  position: absolute;
+  z-index: 3;
+  right: 10%;
+  max-width: 960px;
+}
 .navigation ul {
   list-style: none;
-  font-size: 1.33em;
   font-family: 'Proxima Nova Rg';
-  position: absolute;
   color: rgb( 255, 255, 255 );
   text-transform: uppercase;
-  text-align: left;
-  left: 784px;
-  top: 10px;
-  bottom: 0;
-  right: 0;
-  margin: 0;
+  list-style-type: none;
+  margin: 10px 0 5px 20px;
+  padding: 0;
+  overflow: hidden;
 }
 .navigation ul li {
-  display: inline-block;
-  text-align: center;
-  margin: 0 10px 0 5px;
-  padding: 0;
+	float: left;
 }
 .navigation ul li a {
+	display: inline;
 	font-family: 'Proxima Nova Rg';
 	font-weight: bold;
 	font-style: normal;
+	font-size: 1.1em;
+	color: white;
+	padding: 14px 16px;
+}
+.search-icon {
+	margin-right: 50px;
+}
+.navigation .navbar-right {
+	right: 0;
 }
 
 /* Button */
@@ -160,37 +209,410 @@ section {
 	font-family: 'PT Sans italic';
 	text-align: right;
 }
-.btn_shape {
-  border-width: 1px;
-  border-color: rgb( 125, 122, 124 );
-  border-style: solid;
-  position: absolute;
-  left: 942px;
-  top: 1599px;
-  width: 193px;
-  height: 49px;
-  z-index: 265;
-} 
-.button.primary:hover {
-  background: #6600cc;
-  color: white;
-}
 .BIg_Title {
-  font-size: 72px;
-  font-family: "Proxima Nova Bold";
-  color: rgb( 254, 254, 251 );
+  top: 25%;
+  font-size: 52px;
+  font-family: 'Proxima Nova Rg'
+  color: white;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 0.834;
-  text-align: left;
+  text-align: center;
 }
 .Title_desc {
-  font-size: 30px;
-  font-family: "PT Sans italic";
+  font-size: 24px;
+  font-family: 'PT Sans italic';
   color: rgb( 254, 253, 253 );
   font-style: italic;
   text-align: center;
+  
 }
+
+/* =About
+-------- */
+
+.about-bg {
+  background: url("../images/DeathtoStock_Wired8.png") no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  opacity: .9;
+  min-height: 300px;
+  z-index: -1;
+}
+.about-bg:after {
+  content: '';
+  opacity: .75; /* layer alpha */
+  background: #9f9acf;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+.title-icon {
+	margin-top: 25%;
+	color: #fff;
+}
+.description {
+  font-family: 'PT Sans';
+  color: rgb( 102, 95, 96 );
+  text-align: left;
+}
+.primary-btn {
+	margin-top: 50px;
+	float: right;
+	background-color: #ebebeb;
+
+}
+.primary-btn:hover {
+	background-color: #ebebec;
+}
+
+/* =Services
+-------- */
+.services {
+	
+}
+.services h3 {
+  font-family: 'PT Sans';
+  color: rgb( 102, 95, 96 );
+  font-weight: bold;
+}
+.services-box {
+	min-height: 300px;
+	padding: 20px;
+	margin: 0px;
+}
+.services-bg {
+  background: url("../images/unsplash_523ae1f5502d6_1.png") no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+}
+.services-bg:after {
+  content: '';
+  opacity: .75; /* layer alpha */
+  background: #9f9acf;
+}
+
+/* =Work
+-------- */
+.works {
+  padding: 20px;
+  min-height: 500px; 
+  text-align: center;
+  position: relative;
+  background-color: #9f9acf; 
+  color: white;
+}
+.works-bg {
+  background: url("../images/DeathtoStock_Wired3.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+.works-bg:after {
+  content: '';
+  opacity: .9; /* purple tint */
+  background: #9f9acf;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+.works-item img {
+	
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.secondary-btn {
+  color: rgb( 255, 255, 255 );
+  font-style: italic;
+  text-align: center;
+  margin: 20px;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: 2px solid #fff;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  padding: 10px 32px;
+}
+
+/* Cascading works slider --> */
+.owl_wrapper{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.owl_content{padding-left: 0;}
+.owl_wrapper .owl-item{
+  opacity: 0;
+  transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  transition: all .2s;
+  -webkit-transform: all .2s;
+  z-index: 1;
+}
+.owl_wrapper .active{opacity: 0.5;}
+.owl_wrapper .active.middle_beside{
+  transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  opacity: 0.8;
+  margin: 0 -1%;
+  z-index: 2;
+}
+.owl_wrapper .active.middle{
+  transform: scale(1);
+  -ms-transform: scale(1);
+  opacity: 1;
+  z-index: 3;
+}
+.owl_wrapper .active.next_to_mid{margin-left: -1%;}
+.owl_wrapper .active.prev_to_mid{margin-right: -1%;}
+
+/* =Our Team
+-------- */
+
+.our-team h3 {
+  font-family: 'Proxima Nova Rg';
+  color: #665f60;
+  text-align: center;
+  padding: 10px;
+}
+.item {
+	background-color: #fff;
+	max-width: 100%;
+	display: inline-block;
+	margin: 10px;
+	padding: 10px 0px 0px 0px;
+}
+.item img {
+	border-radius: 50%;
+	max-width: 100%;
+	margin: 20px 0px;
+}
+.item .name {
+  font-size: 24px;
+  font-family: 'Proxima Nova Rg';
+  color: rgb( 159, 154, 207 );
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px;
+}
+.item .social {
+  background-color: rgb( 159, 154, 207 );
+  margin: 0;
+}
+.item .social-links{
+	margin-top: 0;
+	margin-bottom: 0px;
+}
+.item .social ul li {
+	margin: 0px 5px;
+}
+.item .social img {
+	max-width: 60px;
+}
+
+#owl-demo .item{
+  margin: 3px;
+}
+
+
+/* =Testimonial
+-------- */
+.testimonial h3 {
+  color: rgb( 102, 95, 96 );
+  text-transform: uppercase;
+}
+.testimonial p {
+  font-family: 'PT Sans italic';
+  color: rgb( 102, 95, 96 );
+  font-style: italic;
+  text-align: center;
+}
+.text_testimonial {
+	font-size: 1.22em;
+	margin: 50px 0px 40px 0px;
+}
+.testimonial .photo-box {
+	background-color: #fff;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.testimonial .photo-box .client-photo{
+	border-radius: 50%;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+.testimonial .photo-box span {
+	display: inline-block;
+}
+.testimonial .social {
+	background-color: rgb( 159, 154, 207 );
+	margin: 0;
+}
+.testimonial .social-links {
+    margin: 0;
+    padding: 0;
+    width: 60px;
+}
+.testimonial .social-links li a img {
+    display: block;
+}
+
+/* =Subscribe
+-------- */
+.subscribe {
+	background-color: #9f9acf;
+	padding: 40px 10px;
+}
+.subscribe p {
+  font-size: 1em;
+  color: rgb( 255, 255, 255 );
+  font-weight: bold;
+  text-align: left;
+}
+.subscribe .subscribe-icon {
+    margin-left: -120px;
+    z-index: 99;
+    width: 48px;
+    height: auto;
+    padding: 10px;
+}
+
+/* =Contact
+-------- */
+
+
+.contact {
+  padding: 20px;
+  min-height: 600px; 
+  text-align: center;
+  position: relative;
+  color: white;
+}
+#googlemaps { 
+  height: 100%; 
+  width: 100%; 
+  position:absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+}
+#googlemaps:after {
+  content: '';
+  opacity: .6; /* purple tint */
+  background: #9f9acf;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+.contact .contact-us-form {
+	margin-top: 20%;
+	margin-left: 150px;
+}
+.contact .contact-us-form input {
+	background: #9f9acf;
+	opacity: .5;
+	color: #fff;
+	border: solid 2px #fff;
+}
+.contact .contact-us-form textarea {
+	margin-top: 20px;
+	min-height: 120px;
+	background: #9f9acf;
+	opacity: .5;
+	color: #fff;
+	border: solid 2px #fff;
+}
+.contact form input[type=submit] {
+	margin: 20px 10px;
+    padding:5px 35px; 
+    background:#9f9acf;
+    opacity: 1; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    color: rgb( 255, 255, 255 );
+    font-weight: bold;
+    font-size: 16px;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+    font-weight: bold;
+    opacity: .9;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   font-weight: bold;
+   opacity: .9;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   font-weight: bold;
+   opacity: .9;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+   font-weight: bold;
+   opacity: .9;
+}
+
+.sliding-menu .icon-menu {
+	list-style: none;
+}
+.sliding-menu ul li {
+	margin: 10px 10px;
+	display: inline-block;
+}
+.icon-box {
+	display: inline-block;
+}
+
+/* =Footer
+-------- */
+
+.footer {
+	background-color:  #9f9acf;
+	padding: 40px 20px;
+}
+.footer .copyright {
+  color: rgb( 255, 255, 255 );
+  text-align: left;
+}
+
+
+.slide-panel {
+  position: fixed;
+  bottom: 15%;
+  right: -145px;
+  z-index: 9999;
+  max-width: 200px;
+  border: none;
+
+  transition: left 0.4 ease;
+
+}
+.iconDetails {
+margin: 0;
+float:left; 
+max-height:60px;
+background-color: #9f9acf;
+padding: 10px;	
+} 
+.slide-panel:hover .slide-panel {
+  right: 10px;
+}
+
+
+
+
+
+
+
 
 
 
